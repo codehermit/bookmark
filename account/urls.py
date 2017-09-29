@@ -35,5 +35,6 @@ urlpatterns = [
     url(r'^password-reset/complete/$',
         password_reset_complete,
         name='password_reset_complete'),
-    url(r'^$', views.dashboard, "dashboard"),
+    url(r'^$', views.dashboard, name="dashboard"),  # 必须有name=，否则系统无法识别。
+    url(r'^register/$', views.register, name='register'),
 ]
