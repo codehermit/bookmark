@@ -37,4 +37,5 @@ urlpatterns = [
         name='password_reset_complete'),
     url(r'^$', views.dashboard, name="dashboard"),  # 必须有name=，否则系统无法识别。
     url(r'^register/$', views.register, name='register'),
+    url(r'^edit/$', views.edit, name='edit'),
 ]
